@@ -1,0 +1,294 @@
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: #ffffff;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #000000;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #ff1010;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--red);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+                                                        /* HEADER OF THE FILE */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background:#1148ee;
+    padding: 1rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header img {
+    width: 150px;
+    height: 60px;
+    margin-right: 0rem;
+}
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+}
+header .logo:hover {
+    color: #ffffff;
+}
+header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #040000;
+    text-decoration: none;
+}
+
+
+header .navbar a:hover {
+    color: #ffffff;
+}
+header .navbar button {
+    margin-left: 2rem;
+    padding: .0rem 1rem;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+header .navbar button:hover {
+    color: #ff0000;
+}
+
+
+
+
+
+                                                        /* HOME PAGE OF THE FILE */
+.home {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    height: 80rem;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+.home .image {
+    flex: 1 1 40rem;
+}
+.home .image img {
+    margin-left: 10rem;
+    width: 100%;
+    padding: 0rem;
+    animation: float 3s linear infinite;
+}
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
+.home .content h3 {
+    font-size: 5rem;
+    color: #333;
+}
+.home .content p {
+    font-size: 2rem;
+    color: #666;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.producttypes .box-container {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.producttypes .box-container .box {
+    background-color: #ffffff;
+    height: 15rem;
+    flex: 1 1 20rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  0 .5rem 1rem rgba(98, 0, 255, 0.1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    cursor: pointer;
+    border-radius: 20.5rem;
+}
+.producttypes .box-container .box a {
+    text-decoration: none;
+}
+.producttypes .box-container .box .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -100%;
+    left: 0;
+}
+.producttypes .box-container .box .content {
+    text-align: center;
+    background: #fff;
+    padding: 3rem;
+}
+.producttypes .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #000000;
+}
+.producttypes .box-container .box:hover .image {
+    top: 0;
+}
+
+
+
+
+
+.review .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.review .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    flex: 1 1 30rem;
+    background: #333;
+    margin-top: 6rem;
+}
+.review .box-container .box img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    margin-top: -8rem;
+    object-fit: cover;
+    border-radius: 50% ;
+}
+.review .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+.review .box-container .box .stars{
+    font-size: 4rem;
+    color: #ffffff;
+}
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+
+
+
+
+.ourstore .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.ourstore .box-container .box {
+    height: 20rem;
+    flex: 1 1 20rem;
+    border: 1rem solid #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+.ourstore .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    background: #000;
+    height: 10rem;
+    padding: 1.5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+
+footer .share {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    justify-content: center;
+}

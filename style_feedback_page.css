@@ -1,0 +1,193 @@
+/* html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    background: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('login_bg.jpg') no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    background-position: center;
+}
+/* HEADER OF THE FILE */
+header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background:transparent;
+    padding: 1rem 9%;
+}
+header img {
+    width: 150px;
+    height: 60px;
+    margin-right: 0rem;
+}
+header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    text-decoration: none;
+}
+header .logo:hover {
+    color: #ffffff;
+}
+header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+header .navbar a:hover {
+    color: #ffffff;
+}
+header .navbar button {
+    margin-left: 2rem;
+    padding: .0rem 1rem;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 2rem;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+header .navbar button:hover {
+    color: #8c00ff;
+}
+
+
+
+
+
+.feedback {
+    min-height: 80vh;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('login_bg.jpg') no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(100px);
+    margin-top: 100px;
+    border-radius: 10%;
+}
+
+.feedback .content {
+    max-width: 800px;
+    text-align: center;
+}
+
+.feedback .content h2 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.feedback .content p {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.feedback .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.feedback .container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 25px;
+    color: #ffffff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 200px;
+    background: #00bcd4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+

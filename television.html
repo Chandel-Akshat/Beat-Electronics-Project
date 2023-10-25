@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Television</title>
+    <link rel="icon" type="icon" href="TV1.png">
+    <link rel="stylesheet" href="style_tv.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <Header>
+        <a href="Category.html">
+            <img src="beat_elec-removebg-preview.png"></a>
+        <a href="#" class="logo">
+            <i class="fas fa-utensils"></i>
+            Television  
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+
+            <a href="Category.html">Home</a>
+            <a href="#brands">Brands</a>
+            <a href="#order">Order</a>
+            <a href="Category.html#socials">Socials</a>
+            <button onclick="toggleDarkMode()"><i class='bx bx-bulb'></i></button>
+        </nav>
+    </Header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Choose Latest Television</h3>
+            <p>
+                Shop for TVs effortlessly, and enjoy the benefits of an upgraded home entertainment system!
+            </p>
+            <a href="#order" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+            <img src="TV.png">
+        </div>
+    </section>
+
+    <section class="brands" id="brands">
+        <h1 class="heading">Brands Availabe</h1>
+        <div class="box-container">
+
+            <div class="box">
+                <a href="tv_lg.html">
+                <img  class="image" src="lg_logo.png" >
+                <div class="content">
+                    <h3>LG<h3>
+                </div>
+            </a>
+            </div>
+            
+            <div class="box">
+                <a href="tv_sony.html">
+                <img class="image" src="sony_logo.png" >
+                <div class="content">
+                    <h3>SONY</h3>
+                </div>
+            </a>
+            </div>
+            <div class="box">
+                <a href="tv_samsung.html">
+                <img class="image" src="samsung_logo.png" >
+                <div class="content">
+                    <h3>Samsung</h3>
+                </div>
+            </a>
+            </div>
+            <div class="box">
+                <a href="tv_redmi.html">
+                <img class="image" src="redmi_logo.png" >
+                <div class="content">
+                    <h3>Redmi</h3>
+                </div>
+            </a>
+            </div>
+    
+        </div>
+    </section>
+    <script>
+    let darkMode = false;
+
+function toggleDarkMode() {
+    darkMode = !darkMode;
+    const body = document.body;
+    body.classList.toggle('dark-mode', darkMode);
+    body.classList.toggle('night-mode', !darkMode);
+}
+
+    </script>
+
+
+</body>
+
+</html>

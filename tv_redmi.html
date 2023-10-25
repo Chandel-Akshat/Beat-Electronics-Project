@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redmi Telivision</title>
+    <link rel="icon" type="icon" href="redmi_logo.png">
+    <link rel="stylesheet" type="text/css" href="style_lg_tv.css">
+</head>
+
+<body>
+    <Header>
+        <a href="Category.html">
+            <img src="beat_elec-removebg-preview.png"></a>
+        <a href="#" class="logo">
+            <i class="fas fa-utensils"></i>
+            Redmi Television
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="Category.html">Home</a>
+            <a href="#products">Available Television</a>
+            <a href="#order">Order</a>
+            <a href="Category.html#socials">Socials</a>
+        </nav>
+    </Header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Choose Latest Redmi Telivision</h3>
+            <p>
+                Shop for TVs effortlessly, and enjoy the benefits of an upgraded home entertainment system!
+                <br>
+                <b>"Do what you can't."</b>
+            </p>
+            <a href="#order" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+            <img src="redmi_logo.png">
+        </div>
+    </section>
+
+
+
+    <main>
+        <section id="products">
+            <h1 class="heading" >Availabe Redmi Television</h1>
+            <label  class= "filter" for="category-filter">Filter by category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="category1">Under 9,999</option>
+                <option value="category2">Between 10,000 - 19,999 </option>
+            </select>
+
+            <div class="product" data-category="category1">
+                <img src="rtv-1.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Mi A series 80 cm (32 inch) HD Ready LED Smart Google TV 2023 Edition with HD |Dolby Audio | DTS:HD | Vivid Picture Engine</p>
+                    <p class="price">
+                        ₹10,999 <s>₹24,999</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">Product No. - 32LM565BPTA</li>
+                            <li class="content">Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube</li>
+                            <li class="content">Operating System: WebOS</li>
+                            <li class="content">Resolution: HD Ready 1366 x 768 Pixels</li>
+                            <li class="content">Sound Output: 10 W</li>
+                            <li class="content">Refresh Rate: 50 Hz</li>
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+
+            <div class="product" data-category="category1">
+                <img src="rtv-3.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Mi X Series 108 cm (43 inch) Ultra HD (4K) LED Smart Google TV 2023 Edition with 4K Dolby Vision | HDR 10 | Dolby Audio |,DTS X | DTS Virtual: X | Vivid Picture Engine</p>
+                    <p class="price">
+                        ₹25,499 <s>₹42,999</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">Product No. - 43LM565BPTA</li>
+                            <li class="content">Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube</li>
+                            <li class="content">Operating System: WebOS</li>
+                            <li class="content">Resolution: Ultra HD (4K) 3840 x 2160 Pixels</li>
+                            <li class="content">Sound Output: 20 W</li>
+                            <li class="content">Refresh Rate: 60 Hz</li>
+                            <li class="content">7 Days Service Center Replacement/Repair</li>
+                            <li class="content">Manual, Warranty Card : 1Number, Remote: 1Number, Battery: 2 Number</li>
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product" data-category="category1">
+                <img src="rtv-2.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Mi X Series 125 cm (50 inch) Ultra HD (4K) LED Smart Google TV 2023 Edition with 4K Dolby Vision | HDR 10 | Dolby Audio |,DTS X | DTS Virtual: X | Vivid Picture Engine</p>
+                    <p class="price">
+                        ₹30,999 <s>₹44,999</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">Product No. - 50UR7500PSC</li>
+                            <li class="content">Supported Apps: Netflix|Prime Video|Disney+Hotstar|Youtube</li>
+                            <li class="content">Operating System: WebOS</li>
+                            <li class="content">Resolution: Ultra HD (4K) 3840 x 2160 Pixels</li>
+                            <li class="content">Sound Output: 20 W</li>
+                            <li class="content">Refresh Rate: 60 Hz</li>
+                            <li class="content">1 Years Warranty: 1 Year Redmi India Warranty from the date of purchase (Valid till - 31st Oct'23)</li>
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: support@beat_elec.com</p>
+    </footer>
+
+    <script src="jsscript_lg_tv.js"></script>
+    <script>
+        let count = 0;
+      
+        function increment() {
+          count++;
+          document.getElementById('addToCartButton').innerHTML = 'Add to Cart  [' + count + ']';
+        }
+      </script>
+</body>
+
+</html>

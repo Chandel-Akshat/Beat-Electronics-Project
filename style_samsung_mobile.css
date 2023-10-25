@@ -1,0 +1,282 @@
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: #ffffff;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #000000;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--red);
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    text-decoration: none;
+    background-color: #ff1010;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: var(--red);
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1148ee;
+    padding: 1rem 9%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+header img {
+    width: 150px;
+    height: 60px;
+}
+
+header .logo {
+    margin-left: 20rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #000000;
+    text-decoration: none;
+}
+
+header .logo:hover {
+    color: #ffffff;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #040000;
+    text-decoration: none;
+}
+
+header .navbar a:hover {
+    color: #ffffff;
+}
+
+
+
+
+
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    flex: 1 1 40rem;
+    padding-top: 6.5rem;
+}
+
+.home .image {
+    flex: 1 1 40rem;
+}
+
+.home .image img {
+    height: 100%;
+    width: 80%;
+    padding: 10rem;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+}
+
+.home .content h3 {
+    font-size: 5rem;
+    color: #1e00ff;
+}
+
+.home .content p {
+    font-size: 2rem;
+    color: #0080ff;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    height: 450px;
+    width: 350px;
+    margin-left: 8rem;
+    margin-right:2rem;
+}
+
+.product p {
+    font-size: 2rem;
+    color: #000000;
+
+}
+
+.product .description {
+    margin-left: 10rem;
+    align-items: center;
+    width: 60%;
+    margin-top: 0rem;
+}
+.filter{
+    font-size: 1.5rem;
+}
+.product .description .name {
+    margin-top: 10;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.product .description .price {
+    font-size: 2.5rem;
+}
+
+.product .description .box {
+    margin-top: 0rem;
+    padding: 2rem;
+}
+
+.product .description .box .box-container .content{
+    font-size: 2rem;
+}
+
+
+.product button {
+    position: relative;
+    margin-top: 1.5rem;
+    text-align: center;
+    margin-left: 18rem;
+    background-color: #333;
+    align-items: center;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 40px;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+footer p{
+    font-size: 2rem;
+}
+.navbar button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    border-radius: 50rem;
+    margin-left: 2rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.navbar button:hover {
+    background-color: #555;
+}
+body.dark-mode {
+    background-color: #2d2d2d; /* Slightly lighter background color */
+    color: #000000; /* Light text color */
+
+    /* Set text color to white for all elements in dark mode */
+    * {
+        color: #000000;
+    }
+
+    /* Additional styles for specific elements if needed */
+    a,
+    a:visited {
+        color: #ffffff; /* Links color */
+    }
+
+    .heading {
+        color: #ffffff; /* Heading color */
+    }
+}

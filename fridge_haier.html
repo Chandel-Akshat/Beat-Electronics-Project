@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Haier Refrigerator</title>
+    <link rel="icon" type="icon" href="haier_logo.png">
+    <link rel="stylesheet" type="text/css" href="style_fridge_lg.css">
+</head>
+
+<body>
+    <Header>
+        <a href="Category.html">
+            <img src="beat_elec-removebg-preview.png"></a>
+        <a href="#" class="logo">
+            <i class="fas fa-utensils"></i>
+            Haier Refrigerator
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="Category.html">Home</a>
+            <a href="#products">Available Refrigerator</a>
+            <a href="#order">Order</a>
+            <a href="Category.html#socials">Socials</a>
+        </nav>
+    </Header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Choose Latest Haier Refrigerator</h3>
+            <p>
+                Shop for TVs effortlessly, and enjoy the benefits of an upgraded home entertainment system!
+                <br>
+                <b>"Do what you can't."</b>
+            </p>
+            <a href="#order" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+            <img src="haier_logo.png">
+        </div>
+    </section>
+
+
+
+    <main>
+        <section id="products">
+            <h1 class="heading" >Availabe Haier Refrigerator</h1>
+            <label  class= "filter" for="category-filter">Filter by category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="category1">Under 9,999</option>
+                <option value="category2">Between 10,000 - 19,999 </option>
+                <option value="category3">Between 20,000 - 39,999</option>
+                <option value="category4">Above 40,000</option>
+            </select>
+
+            <div class="product" data-category="category1">
+                <img src="haifri-1.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Haier 190 L Direct Cool Single Door 4 Star Refrigerator  (DAZZLE STEEL, HED-204DS-P)</p>
+                    <p class="price">
+                        ₹14,490 <s>₹20,990</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">190 L : Good for couples and small families</li>
+                            <li class="content">Normal Compressor</li>
+                            <li class="content">4 Star : For Energy savings up to 45%</li>
+                            <li class="content">Direct Cool : Economical, consumes less electricity, requires manual defrosting</li>
+            
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product" data-category="category1">
+                <img src="haifri-2.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Haier 190 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer  (MARINE PEONY, HED-204MFB-P)</p>
+                    <p class="price">
+                        ₹15,490 <s>₹23,990</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">190 L : Good for couples and small families</li>
+                            <li class="content">Normal Compressor</li>
+                            <li class="content">4 Star : For Energy savings up to 45%</li>
+                            <li class="content">Direct Cool : Economical, consumes less electricity, requires manual defrosting</li>
+                            <li class="content">Base Stand with Drawer : For storing items that don't need cooling (Onion, Potato etc.)</li>
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: support@beat_elec.com</p>
+    </footer>
+
+    <script src="jsscript_lg_tv.js"></script>
+    <script>
+        let count = 0;
+      
+        function increment() {
+          count++;
+          document.getElementById('addToCartButton').innerHTML = 'Add to Cart  [' + count + ']';
+        }
+      </script>
+</body>
+
+</html>

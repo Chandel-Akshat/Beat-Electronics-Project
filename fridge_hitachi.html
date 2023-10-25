@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hitachi Refrigerator</title>
+    <link rel="icon" type="icon" href="hitachi_logo.png">
+    <link rel="stylesheet" type="text/css" href="style_fridge_lg.css">
+</head>
+
+<body>
+    <Header>
+        <a href="Category.html">
+            <img src="beat_elec-removebg-preview.png"></a>
+        <a href="#" class="logo">
+            <i class="fas fa-utensils"></i>
+            Hitachi Refrigerator
+        </a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="Category.html">Home</a>
+            <a href="#products">Available Refrigerator</a>
+            <a href="#order">Order</a>
+            <a href="Category.html#socials">Socials</a>
+        </nav>
+    </Header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Choose Latest Hitachi Refrigerator</h3>
+            <p>
+                Shop for TVs effortlessly, and enjoy the benefits of an upgraded home entertainment system!
+                <br>
+                <b>"Do what you can't."</b>
+            </p>
+            <a href="#order" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+            <img src="hitachi_logo.png">
+        </div>
+    </section>
+
+
+
+    <main>
+        <section id="products">
+            <h1 class="heading" >Availabe Hitachi Refrigerator</h1>
+            <label  class= "filter" for="category-filter">Filter by category:</label>
+            <select id="category-filter">
+                <option value="all">All</option>
+    
+                <option value="category3">Between 40,000 - 59,999</option>
+                <option value="category4">Above 60,000</option>
+            </select>
+
+            <div class="product" data-category="category3">
+                <img src="hitfri-1.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Hitachi 403 L Frost Free Double Door 2 Star Refrigerator  (Glass Black, R-VG440PND8)</p>
+                    <p class="price">
+                        ₹47,561 <s>₹66,000</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">403 L : Good for large families</li>
+                            <li class="content">Inverter</li>
+                            <li class="content">2 Star : For Energy savings up to 20%</li>
+                            <li class="content">Frost Free : Auto fridge defrost to stop ice-build up</li>
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product" data-category="category3">
+                <img src="hitfri-2.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Hitachi 375 L Frost Free Double Door 2 Star Refrigerator  (Glass Black, R-VG400PND8 GBK)</p>
+                    <p class="price">
+                        ₹44,052 <s>₹61,800</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">184 L : Good for couples and small families</li>
+                            <li class="content">DC Inverter Compressor</li>
+                            <li class="content">4 Star : For Energy savings up to 45%</li>
+                            <li class="content">Direct Cool : Economical, consumes less electricity, requires manual defrosting</li>
+                            <li class="content">Base Stand with Drawer : For storing items that don't need cooling (Onion, Potato etc.)</li>
+                            <li class="content">7 Days Service Center Replacement/Repair</li>
+                        </ul>                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product" data-category="category4">
+                <img src="hitfri-3.png" alt="Samsung Galaxy F04">
+                <div class="description">
+                    <p class="name">Hitachi 565 L Frost Free Double Door 3 Star Refrigerator  (Glass Grey, R-VG610PND3)</p>
+                    <p class="price">
+                        ₹71,165 <s>₹77,500</s>
+                    </p>
+                    <div class="box">
+                        <ul class="box-container">
+                            <li class="content">467 L</li>
+                            <li class="content">Inverter Compressor</li>
+                            <li class="content">2 Star : For Energy savings up to 20%</li>
+                            <li class="content">Frost Free : Auto fridge defrost to stop ice-build up</li>
+                            <li class="content">Convertible: Offers you more space for all the food you need to store</li>
+                            <li class="content">7 Days Service Center Replacement/Repair</li>
+                        </ul>
+                    </div>
+                     <button id="addToCartButton" onclick="increment()">Add to Cart</button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us: support@beat_elec.com</p>
+    </footer>
+
+    <script src="jsscript_lg_tv.js"></script>
+    <script>
+        let count = 0;
+      
+        function increment() {
+          count++;
+          document.getElementById('addToCartButton').innerHTML = 'Add to Cart  [' + count + ']';
+        }
+      </script>
+</body>
+
+</html>

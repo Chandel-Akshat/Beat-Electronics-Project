@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 6rem;
+}
+body{
+    background: #ffffff;
+}
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 1rem;
+    color: #000000;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    background: #1148ee;
+    padding: 1rem 9%;
+}
+header img {
+    width: 150px;
+    height: 60px;
+    margin-right: 0rem;
+}
+header .logo{ 
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 10rem;
+}
+header .logo:hover{
+    color: #ffffff;
+}
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+header .navbar a:hover {
+    color: #ffffff;
+}
